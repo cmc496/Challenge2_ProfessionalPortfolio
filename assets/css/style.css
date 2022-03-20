@@ -90,6 +90,39 @@ header nav ul li a {
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
+/* Body */
+
+/* About Me */
+
+.bio {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.section-title {
+    font-size: 40px;
+    color: var(--tc);
+    text-align: right;
+    margin: 30px 0 30px 100px;
+}
+
+.bio p {
+    line-height: 1.2;
+    color: var(--tc);
+    text-align: left;
+    margin: 30px 100px 30px 25px;
+    border-left: 3px solid;
+    padding-left: 20px;
+}
+
+
+
+
+
+/* Utilities */
+
+
+
 
 
 
