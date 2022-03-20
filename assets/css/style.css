@@ -2,5 +2,65 @@
     --fc: #ffff;
     --sc: gray;
     --tc: black;
+    --foc: red;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--tc);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header_Nav Styles */
+
+header {
+    padding: 75px 35px 10px 0;
+    background-color: var(--sc);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position:static;
+}
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 40px;
+    color: var(--fc);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    background-color: var(--foc);
+    padding: 10px 5px 10px 50px;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--fc);
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid;
+    border-bottom-color: var(--fc);
+}
+
 
