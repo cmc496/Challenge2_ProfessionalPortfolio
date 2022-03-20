@@ -19,7 +19,7 @@ body {
 /* Header_Nav Styles */
 
 header {
-    padding: 75px 35px 10px 0;
+    padding: 100px 35px 10px 0;
     background-color: var(--sc);
     display: flex;
     justify-content: space-between;
@@ -62,5 +62,34 @@ header nav ul li a {
     border-bottom: 2px solid;
     border-bottom-color: var(--fc);
 }
+
+/* Hero */
+
+.hero {
+    background-image: url('../images/SunflowerOption1.png');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: right bottom;
+    
+}
+
+.hero-cta {
+    text-align: center;
+    margin: 100px 35px 10px 0;
+    color: var(--fc);
+    line-height: 1.2;
+}
+
+.hero-cta h2 {
+    background-color: var(--foc);
+    margin: 100px 0 0 980px;    
+    padding: 10px 10px 10px 10px;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+
 
 
