@@ -153,26 +153,34 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     margin: 0 100px 10px 0;
+    justify-content: space-between;
 }
 
 .project2, .project3, .project4, .project5 {
     border: 5px solid var(--tc);
-    width: 50%;
-    height: 100px;
+    width: 49%;
+    height: 125px;
     padding: 50px 200px 50px 0;
     background-image: url('../images/ProjectPlaceholder.png');
+    background-position: left;
 }
-.project2-font {
+.project2-font, .project3-font, .project4-font, .project5-font {
     background: var(--tc);
     font-family: helvetica;
     padding: 0 0 0 7px;
     color: var(--fc);
+    width: 100px;
 }
 
-.p2title {
+.project4, .project5 {
+    margin-top: 20px;
+}
+.p2title, .p3title, .p4title, .p5title {
     font-size: 20px;
-
 }
+
+
+
 
 /* Utilities */
 
