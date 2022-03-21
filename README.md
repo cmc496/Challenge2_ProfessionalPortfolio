@@ -2,9 +2,9 @@
 This repo holds a portfolio of web applications.
 
 Included projects are:
-1.
-2.
-3.
-4.
-5.
+1.Run-buddy
+2.Fanpage
+3.Horiseon
+4.Future project
+5.Future project
 

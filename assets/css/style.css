@@ -151,6 +151,20 @@ header nav ul li a {
     border: 5px solid var(--tc);
     width: 100%;
     margin: 10px 0 20px;
+    background-image: url('../images/RunBuddyProjectBanner.png');
+    background-position: top;
+    padding: 425px 800px 50px 0;
+    opacity: 0.75;
+}
+
+
+.project1-font {
+    background: var(--tc);
+
+}
+
+.p1title {
+    font-size: 20px;
 }
 
 .other-projects {
@@ -168,9 +182,11 @@ header nav ul li a {
     padding: 50px 200px 50px 0;
     background-image: url('../images/ProjectPlaceholder.png');
     background-position: left;
+    opacity: 0.75;
 }
 .project2-font, .project3-font, .project4-font, .project5-font {
     background: var(--tc);
+    background-size: auto;
     font-family: helvetica;
     padding: 0 0 0 7px;
     color: var(--fc);
@@ -360,8 +376,11 @@ header nav ul li a {
     }
 }
 
+/* Hover features */
 
-/* Utilities */
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover {
+    opacity: 1.0;
+}
 
 
 
