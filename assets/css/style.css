@@ -118,9 +118,10 @@ header nav ul li a {
 .bio p {
     line-height: 1.2;
     text-align: left;
-    margin: 30px 100px 30px 25px;
+    margin: 30px 100px 25px 25px;
     border-left: 3px solid;
-    padding-left: 20px;
+    padding: 35px 0 0 20px;
+    font-weight: bold;
 }
 
 /* Work */
@@ -148,7 +149,7 @@ header nav ul li a {
 
 .project1 {
     height: 500px;
-    border: 5px solid var(--tc);
+    border: 5px solid var(--fc);
     width: 100%;
     margin: 10px 0 20px;
     background-image: url('../images/RunBuddyProjectBanner.png');
@@ -163,8 +164,10 @@ header nav ul li a {
 
 }
 
-.p1title {
+.project1 a {
     font-size: 20px;
+    text-decoration: none;
+    color: var(--fc);
 }
 
 .other-projects {
@@ -176,7 +179,7 @@ header nav ul li a {
 }
 
 .project2, .project3, .project4, .project5 {
-    border: 5px solid var(--tc);
+    border: 5px solid var(--fc);
     width: 49%;
     height: 125px;
     padding: 50px 200px 50px 0;
@@ -196,10 +199,15 @@ header nav ul li a {
 .project4, .project5 {
     margin-top: 20px;
 }
-.p2title, .p3title, .p4title, .p5title {
+.p2title, .p4title, .p5title {
     font-size: 20px;
 }
 
+.project3 a {
+    text-decoration: none;
+    color: var(--fc);
+    font-size: 20px;
+}
 /* Contact Me */
 
 .contact {
@@ -380,6 +388,7 @@ header nav ul li a {
 
 .project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover {
     opacity: 1.0;
+    border-color: var(--tc);
 }
 
 
