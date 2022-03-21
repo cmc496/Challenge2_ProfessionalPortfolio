@@ -1,5 +1,5 @@
 # Challenge2_ProfessionalPortfolio
-This repo holds a portfolio of web applications.
+This repo holds a portfolio of web applications I've made in bootcamp thus far, as well as a short bio and ways to contact me.
 
 Included projects are:<br>
 1.Run-buddy
