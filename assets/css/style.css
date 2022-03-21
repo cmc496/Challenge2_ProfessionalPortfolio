@@ -184,9 +184,22 @@ header nav ul li a {
     width: 49%;
     height: 125px;
     padding: 50px 200px 50px 0;
-    background-image: url('../images/ProjectPlaceholder.png');
-    background-position: left;
     opacity: 0.75;
+}
+
+.project2 {
+    background-image: url('../images/FanpageScreenshot.png');
+    background-position: center;
+}
+
+.project3 {
+    background-image: url('../images/HoriseonScreenshot.png');
+    background-position: auto;
+}
+
+.project4, .project5 {
+    background-image: url('../images/RunBuddyProjectBanner.png');
+    background-position: top;
 }
 .project2-font, .project3-font, .project4-font, .project5-font {
     background: var(--tc);
