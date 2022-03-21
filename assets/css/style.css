@@ -1,8 +1,8 @@
 :root {
     --fc: #ffff;
-    --sc: gray;
-    --tc: black;
-    --foc: red;
+    --sc: #bc97f0;
+    --tc: #fadf75;
+    --foc: 
 }
 
 * {
@@ -12,19 +12,23 @@
 }
 
 body {
-    color: var(--tc);
+    color: var(--fc);
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--sc);
 }
 
 /* Header_Nav Styles */
 
 header {
-    padding: 100px 35px 10px 0;
+    padding: 15px 35px 15px 0;
     background-color: var(--sc);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position:static;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 header h1 {
     font-weight: bold;
@@ -32,8 +36,10 @@ header h1 {
     font-size: 40px;
     color: var(--fc);
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-    background-color: var(--foc);
-    padding: 10px 5px 10px 50px;
+    background-color: var(--tc);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 10px 10px 50px;
     justify-content: center;
 }
 
@@ -43,7 +49,8 @@ header a {
 }
 
 header nav {
-    margin: 10px 0;
+    padding: 10px;
+    margin: 10px 0 5px 0;
 }
 
 header nav ul {
@@ -55,7 +62,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 15px 15px 5px 15px;
     font-weight: lighter;
     font-size: 1.5vw;
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
@@ -87,7 +94,7 @@ header nav ul li a {
 }
 
 .hero-cta h2 {
-    background-color: var(--foc);
+    background-color: var(--sc);
     margin: 100px 100px 0 980px;    
     padding: 10px 10px 10px 10px;
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
@@ -104,14 +111,12 @@ header nav ul li a {
 }
 .section-title {
     font-size: 40px;
-    color: var(--tc);
     text-align: right;
     margin: 30px 0 30px 100px;
 }
 
 .bio p {
     line-height: 1.2;
-    color: var(--tc);
     text-align: left;
     margin: 30px 100px 30px 25px;
     border-left: 3px solid;
@@ -192,11 +197,11 @@ header nav ul li a {
 
 .contact a {
     text-decoration: none;
-    color: var(--tc);
+    color: var(--fc);
 }
 
 .points-of-contact {
-    border-left: 3px solid var(--tc);
+    border-left: 3px solid var(--fc);
     padding: 25px;
     margin: 30px 100px 30px 100px;
     width: 100%;
@@ -213,12 +218,148 @@ header nav ul li a {
 
 .points-of-contact nav ul li a {
     padding: 10px 15px;
-    border-bottom: 3px solid var(--tc);
+    border-bottom: 3px solid var(--fc);
     margin: 200px 0 0 20px;
     font-weight: lighter;
     font-size: 1.5vw;
-    border-bottom: 3px solid var(--tc);
 }
+
+/* Media query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+
+    .hero-cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-cta h2 {
+        margin: 100px 100px 0 750px;
+    }
+
+    .bio h3 {
+        text-align: center;
+        width: 40%;
+    }
+
+    .work h3 {
+        text-align: center;
+        width: 20%;
+    }
+
+    .project2, .project3, .project4, .project5 {
+        flex: 0 100%;
+    }
+
+    .project3 {
+        margin-top: 20px;
+    }
+
+    .contact h3 {
+        text-align: center;
+        width: 29%;
+    }
+}
+
+/* Media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .hero-cta h2 {
+        margin: 100px 100px 0 500px;
+    }
+
+
+    .bio {
+        padding: 15px;
+    }
+
+
+    .bio h3 {
+        text-align: center;
+        font-size: 25px;
+        margin: 35px 20px;
+    }
+
+    .work {
+        padding: 15px;
+    }
+
+    .work h3 {
+        font-size: 25px;
+        margin: 30px 15px;
+    }
+
+
+    .contact h3 {
+        text-align: center;
+        margin: 40px 32px;
+        width: 10%;
+        font-size: 25px;
+    }
+
+    .points-of-contact {
+        width: 100%;
+        margin: 15px 15px;
+    }
+}
+
+/* Media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+    .hero-cta h2 {
+        margin: 100px 100px 0 350px;
+    }
+
+    .bio p {
+        margin: 30px 100px 30px 15px;
+    }
+
+    .bio h3 {
+        font-size: 20px;
+        margin: 35px 10px 35px 10px;
+    }
+
+    .project-box {
+        margin-left: 15px;
+    }
+
+    .work h3 {
+        font-size: 20px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+        margin: 15px 13px;
+        text-align: center;
+    }
+
+    .points-of-contact {
+        padding: 5px;
+    }
+}
+
 
 /* Utilities */
 
