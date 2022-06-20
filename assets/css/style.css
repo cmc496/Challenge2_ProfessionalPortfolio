@@ -208,14 +208,21 @@ header nav ul li a {
     background-position: 35% 35%;
 }
 .project5 {
-    background-image: url('../images/ProjectPlaceholder.png');
-    background-position: top;
+    background-image: url('../images/Dog-Meet-Dog.png');
+    background-position: 50% 3%;
 }
-.project2-font, .project3-font, .project4-font, .project5-font {
+.project2-font, .project3-font, .project4-font {
     background: var(--tc);
-    background-size: auto;
     font-family: helvetica;
     padding: 0 0 0 7px;
+    color: var(--fc);
+    width: 100px;
+}
+
+.project5-font {
+    background: var(--tc);
+    font-family: helvetica;
+    padding: 0 150px 0 7px;
     color: var(--fc);
     width: 100px;
 }
@@ -223,11 +230,21 @@ header nav ul li a {
 .project4, .project5 {
     margin-top: 20px;
 }
+
+.project5 {
+    margin-left: 19px;
+}
 .p2title, .p4title, .p5title {
     font-size: 20px;
 }
 
 .project2 a, .project3 a {
+    text-decoration: none;
+    color: var(--fc);
+    font-size: 20px;
+}
+
+.project5 a {
     text-decoration: none;
     color: var(--fc);
     font-size: 20px;
